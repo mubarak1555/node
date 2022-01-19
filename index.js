@@ -1,7 +1,7 @@
 const express = require('express');
 const https = require('https');
 const app = express()
-const port = 2000;
+const port = 3000;
 app.get('/', (req, res) =>{
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=Tel aviv&units=metric&appid=a19d8951466f892a21884748a20d6bbb';
     https.get(url, (response) =>{
